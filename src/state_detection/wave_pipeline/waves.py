@@ -1,6 +1,5 @@
-from state_detection.states import rising_state, falling_state
-from state_detection.events import enter_state, exit_state, event_number
-from state_detection.signals import smooth
+from state_detection.operators.events import enter_state, exit_state, event_number
+from state_detection.operators.signals import smooth
 
 def add_timeseries_features(df, signal, group, smooth_window=20, diff_lag=10, eps=0):
     df = df.copy()

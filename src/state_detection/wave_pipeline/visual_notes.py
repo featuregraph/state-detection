@@ -1,15 +1,6 @@
-import numpy as np
 import pandas as pd
-import math
-import random
-import matplotlib
-import matplotlib.pyplot as plt
-import torch
-import seaborn as sns
-
-from lib.common.plotting.timeseries import plot_horizontal as plot
-from state_detection.rename_map import rename_map
-from state_detection.wave_pipeline import run_wave_pipeline
+from state_detection.data_formatting.rename_map import rename_map
+from state_detection.wave_pipeline.wave_pipeline import run_wave_pipeline
 
 df = pd.read_csv("TEP_Faulty_Training.csv")
 df = df.rename(columns=rename_map)

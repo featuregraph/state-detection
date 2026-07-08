@@ -1,4 +1,4 @@
-from state_detection.waves import add_timeseries_features, add_summary_features, add_summary_comparison_features, summarize_runs
+from state_detection.wave_pipeline.waves import add_timeseries_features, add_summary_features, add_summary_comparison_features, summarize_runs
 def run_wave_pipeline(
     df,
     signals,
