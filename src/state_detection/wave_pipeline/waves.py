@@ -63,6 +63,7 @@ def add_inter_wave_features(df, signals, group):
         df[f"{signal}_symmetry"] = (1 - (df[f"{signal}_rising_time"] - df[f"{signal}_falling_time"]).abs() / df[f"{signal}_duration"])
 
     return df
+
 def get_wave_summary(df, signal):
     summarydf = (
         df.groupby(f"{signal}_wave_id")
